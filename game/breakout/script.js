@@ -25,7 +25,7 @@ var gameSettings = {
 
     brickWidth: 50,
     brickHeight: 20,
-    brickRow: 1,
+    brickRow: 3,
     brickCol: 7,
     brickOffsetTop: 30,
     brickOffsetLeft: 55,
