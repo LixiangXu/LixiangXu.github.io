@@ -1,12 +1,32 @@
----
-layout: default
-title: Lixiang Xu's Blog
----
-<div class="blurb">
-	<h1>Hi there, I'm LixiangXu!</h1>
-	<p>I'm a physics graduate student at the University of Texas at Austin, and working on some NLP (natural language processing) and human fMRI problems.<a href="/about">Read more about me...</a></p>
-</div><!-- /.blurb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href='nav/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
 
-<div>
-    <p><a href='/game'><span>Game</span></a></p>
-</div>
+    <!-- Home selection start -->
+    <selection class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Lixiang Xu</div>
+                <div class="text-3">And I'm a <span>Physics graduate student</span></div>
+                <div class="text-4">researching in <span>Computational Neuroscience.</span></div>
+            </div>
+        </div>
+    </selection>
+    <script>
+        $(function(){
+            $("#navbar-placeholder").load("nav/navbar.html");
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

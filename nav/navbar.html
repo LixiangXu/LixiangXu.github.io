@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href='../index.html'>Home<span>page</span></a></div>
+            <ul class="menu">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../CV/index.html">CV</a></li>
+                <li><a href="../Research/index.html">Research</a></li>
+                <li><a href="../Blog/index.html">Blog</a></li>
+                <li><a href="../Interest/index.html">Interest</a></li>
+                <li><a href="../Contact/index.html">Contact</a></li>    
+            </ul>
+        </div>
+    </nav>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if(this.scrollY > 20){
+                    $('.navbar').addClass('sticky');
+                }else{
+                    $('.navbar').removeClass('sticky');
+                }
+            })
+        })
+    </script>
+</body>
+</html>

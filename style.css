@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body
+{
+    background: lightblue;
+}
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* home selection styling */
+.home
+{
+    display: flex;
+    height: 100vh;
+    background: url('assets/bg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Original Surfer', cursive;
+}
+.home .max-width
+{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1
+{
+    font-size: 27px;
+}
+.home .home-content .text-2
+{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3,
+.home .home-content .text-4
+{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span,
+.home .home-content .text-4 span
+{
+    color: crimson;
+    font-weight: 800;
+}
