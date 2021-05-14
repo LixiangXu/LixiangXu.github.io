@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body
+{
+    background: linear-gradient(rgba(249, 236, 185, 0.7), rgb(209, 227, 157));
+    display: flex;
+    min-height: 100vh;
+}
+.blog
+{
+    width: 100%;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* style for blog main page */
+.container
+{
+    position: relative;
+    top: 120px;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+}
+.container .card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #fff;
+    transition: 0.5s;
+}
+.container .card:hover
+{
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .2);
+}
+.container .card .face
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .face.face1
+{
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    color: #013d4a;
+}
+.container .card .face.face1 h2
+{
+    margin-top: 60px;
+}
+.container .card .face.face1 a
+{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #013d4a;
+    border: 2px solid #013d4a;
+}
+.container .card .face.face1 a:hover
+{
+    color: #fff;
+    background: #013d4a;
+}
+.container .card .face.face2
+{
+    background: #013d4a;
+    transition: 0.5s;
+}
+.container .card:hover .face.face2
+{
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+    background: transparent;
+}
+.container .card .face.face2 h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    color: #fff;
+    transition: 0.5s;
+}
+.container .card:hover .face.face2 h2
+{
+    color: #013d4a;
+    font-size: 2em;
+}
+
+/* style for notes */
+.notes
+{
+    width: 100%;
+    position: relative;
+    top: 120px;
+    width: 1100px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 150px;
+}
+.notes h1.title,
+.notes h1.end
+{
+    font-size: 3em;
+    text-shadow: 5px 5px rgba(255, 255, 255, 0.5);
+}
+.notes ul li .name
+{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(20, 98, 206);
+}

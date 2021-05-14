@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blogs</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href='../nav/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body> 
+    <div id="navbar-placeholder"></div>
+    <div class="blog">
+        <div class="container">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <p>notes from sfn 2019@Chicago</p>
+                        <a href="sfN_2019_notes.html">Read More</a>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <h2>2019 sfn</h2>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <p>Here are some knowledge about how fMRI works</p>
+                        <a href="template.html">Read More</a>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <h2>Physics of fMRI</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#navbar-placeholder").load("../nav/navbar.html");
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
